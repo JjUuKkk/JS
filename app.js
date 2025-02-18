@@ -18,18 +18,7 @@
 // Если число делится на 3, вместо него надо сказать «Fizz».
 // Если число делится на 5, вместо него надо сказать «Buzz».
 // А если число делится одновременно на 3 и на 5, то надо вместо него сказать «FizzBuzz»
-// for (let i = 1; i <= 20; i++) {
-//   if (i % 3 === 0) {
-//     console.log("Fizz");
-//   }
-//   if (i % 5 === 0) {
-//     console.log("Buzz");
-//   } else if (i % 3 === 0 && i % 5 === 0) {
-//     console.log("FizzBuzz");
-//   } else {
-//     console.log(i);
-//   }
-// }
+
 // for (let i = 1; i <= 100; i++) {
 //   if (i % 3 === 0 && i % 5 === 0) {
 //     console.log("FizzBuzz");
@@ -178,38 +167,12 @@
 //     upperCase: str.toUpperCase(),
 //     lowerCase: str.toLowerCase(),
 //     trimmed: str.trim(),
-//     firstChar: str.firstChar,
-//     length: str.length,
-//   };
-// }
-
-// console.log(processString("  Hello, World!  "));
-
-// function processString(str) {
-//   return {
-//     upperCase: str.toUpperCase(),
-//     lowerCase: str.toLowerCase(),
-//     trimmed: str.trim(),
 //     firstChar: str.trim().at(0),
 //     length: str.length,
 //   };
 // }
 
 // console.log(processString("  Hello, World!  "));
-
-// function anagram(s1, s2) {
-//   s1 = s1.toLowerCase().split("").sort().join("");
-//   s2 = s2.toLowerCase().split("").sort().join("");
-//   return s1 === s2;
-// }
-// console.log(anagram("", "")); // true
-// console.log(anagram("123", "123")); // true
-// console.log(anagram("bumdle", "dumble")); // true
-// console.log(anagram("aboba", "baoab")); // true
-// console.log(anagram("a", "")); // false
-// console.log(anagram("ab", "a")); // false
-// console.log(anagram("ab", "cd")); // false
-// console.log(anagram("codewars", "hackerrank")); //false
 
 // Задача 1. Теперь давайте сделаем функцию, которая вычислит сумму всей покупки.
 // Дайте функции понятное название и добавьте такие правила: нужно проверять, является ли цена числом, суммируем только положительные цены,
@@ -227,25 +190,6 @@
 // }
 // console.log(priceSum(items));
 
-// Задача 2. Возьмите этот объект и для нее напишите метод, которая дополняет ее товарами по примеру тех, которые уже есть.
-// Функция принимает название каталога, название и стоимость товара. Если каталога не существует, то его необходимо создать и добавить туда товар.
-// Также сделать проверку на ввод числа, функция должна принимать числа даже в строке, но при вводе строки выводить NaN.
-// const purchase = {
-//   Electronics: [
-//       { name: 'Laptop', price: 1500 },
-//       { name: 'Keyboard', price: 100 }
-//   ],
-//   Textile: [
-//       { name: 'Bag', price: 50 },
-//       { name: 'Laptop', price: 100 }
-//   ],
-// };
-
-// console.log(purchaseCatalogs('Electronics', 'Laptop', 1500))
-// let user = {
-//   name: "john",
-//   age: 30,
-// };
 // let clon = {};
 
 // for (let key in user) {
@@ -269,18 +213,3 @@
 //   },
 // };
 // user.greet();
-// Задача 2. Возьмите этот объект и для нее напишите метод, которая дополняет ее товарами по примеру тех, которые уже есть.
-// Функция принимает название каталога, название и стоимость товара. Если каталога не существует, то его необходимо создать и добавить туда товар.
-// Также сделать проверку на ввод числа, функция должна принимать числа даже в строке, но при вводе строки выводить NaN.
-const purchase = {
-  Electronics: [
-    { name: "Laptop", price: 1500 },
-    { name: "Keyboard", price: 100 },
-  ],
-  Textile: [
-    { name: "Bag", price: 50 },
-    { name: "Laptop", price: 100 },
-  ],
-};
-
-console.log(purchaseCatalogs("Electronics", "Laptop", 1500));
