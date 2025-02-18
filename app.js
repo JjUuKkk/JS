@@ -262,10 +262,25 @@
 // Object.assign(user, permi, perm);
 // console.log(user);
 
-let user = {
-  name: "john",
-  greet: () => {
-    console.log(`привет, ${this.name}`);
-  },
+// let user = {
+//   name: "john",
+//   greet: () => {
+//     console.log(`привет, ${this.name}`);
+//   },
+// };
+// user.greet();
+// Задача 2. Возьмите этот объект и для нее напишите метод, которая дополняет ее товарами по примеру тех, которые уже есть.
+// Функция принимает название каталога, название и стоимость товара. Если каталога не существует, то его необходимо создать и добавить туда товар.
+// Также сделать проверку на ввод числа, функция должна принимать числа даже в строке, но при вводе строки выводить NaN.
+const purchase = {
+  Electronics: [
+    { name: "Laptop", price: 1500 },
+    { name: "Keyboard", price: 100 },
+  ],
+  Textile: [
+    { name: "Bag", price: 50 },
+    { name: "Laptop", price: 100 },
+  ],
 };
-user.greet();
+
+console.log(purchaseCatalogs("Electronics", "Laptop", 1500));
