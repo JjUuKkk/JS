@@ -212,4 +212,20 @@
 //     console.log(`привет, ${this.name}`);
 //   },
 // };
-// user.greet();
+// // user.greet();
+// function processString(str) {}
+
+// processString("  Hello, World!  ");
+
+// function processString(str) {
+//   return {
+//     upperCase: str.toUpperCase(),
+//     lowerCase: str.toLowerCase(),
+//     trimmed: str.trim(),
+//     firstChar: str.trim()[0],
+//     length: str.length,
+//   };
+// }
+// console.log(processString("  Hello, World!  "));
+let str = "Widget with id";
+console.log(str.indexOf("Widget"));
