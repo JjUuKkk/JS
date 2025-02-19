@@ -162,34 +162,6 @@
 //   clone[key] = user[key];
 // }
 
-// function processString(str) {
-//   return {
-//     upperCase: str.toUpperCase(),
-//     lowerCase: str.toLowerCase(),
-//     trimmed: str.trim(),
-//     firstChar: str.trim().at(0),
-//     length: str.length,
-//   };
-// }
-
-// console.log(processString("  Hello, World!  "));
-
-// Задача 1. Теперь давайте сделаем функцию, которая вычислит сумму всей покупки.
-// Дайте функции понятное название и добавьте такие правила: нужно проверять, является ли цена числом, суммируем только положительные цены,
-// а если находим не число или отрицательное число, то выдаем ошибку при помощи throw.
-
-// const items = [{ price: 10 }, { price: 20 }, { price: 30 }, { price: 40 }];
-// function priceSum(items) {
-//   let sum = 0;
-//   for (let i = 0; i < items.length; i++) {
-//     if (typeof items[i].price === "number" && items[i].price > 0) {
-//       sum += items[i].price;
-//     }
-//   }
-//   return sum;
-// }
-// console.log(priceSum(items));
-
 // let clon = {};
 
 // for (let key in user) {
@@ -215,6 +187,17 @@
 // // user.greet();
 // function processString(str) {}
 
+// 1) Напиши функцию processString, которая принимает строку в качестве аргумента и возвращает объект в сл. виде.
+// processString("  Hello, World!  ")
+/*{
+  upperCase: "  HELLO, WORLD!  ",
+  lowerCase: "  hello, world!  ",
+  trimmed: "Hello, World!",
+  firstChar: "H",
+  length: 16
+}
+*/
+// function processString(str) {}
 // processString("  Hello, World!  ");
 
 // function processString(str) {
@@ -227,5 +210,47 @@
 //   };
 // }
 // console.log(processString("  Hello, World!  "));
-let str = "Widget with id";
-console.log(str.indexOf("Widget"));
+
+// 3) Создать копию массива через reduce, где все элементы массива будут в 2 раза больше
+// const arr = [1, 2, 3, 4, 5];
+// const result = arr.reduce((acc, value) => {
+//   acc.push(value * 2);
+//   return acc;
+// }, []);
+
+// console.log(result);
+
+// Задача 1. Теперь давайте сделаем функцию, которая вычислит сумму всей покупки.
+// Дайте функции понятное название и добавьте такие правила: нужно проверять, является ли цена числом, суммируем только положительные цены,
+// а если находим не число или отрицательное число, то выдаем ошибку при помощи throw.
+// const items = [{ price: 10 }, { price: 20 }, { price: 30 }, { price: 40 }];
+// function pricesum(items) {
+//   let sum = 0;
+//   for (let i = 0; i < items.length; i++) {
+//     if (typeof items[i].price === "number" && items[i].price > 0) {
+//       sum += items[i].price;
+//     }
+//   }
+//   return sum;
+// }
+// console.log(pricesum(items));
+
+// Задача 5. Найти вес всех вещей, цена которых более 80 и количество менее 7
+// const foods = [
+//   { name: "Паста болоньезе", weight: 350, price: 33, quanity: 3 },
+//   { name: "Спаггети", weight: 350, price: 56, quanity: 8 },
+//   { name: "Суп", weight: 400, price: 68, quanity: 16 },
+//   { name: "Пицца", weight: 675, price: 139, quanity: 30 },
+//   { name: "Молоко", weight: 1600, price: 339, quanity: 8 },
+//   { name: "Овощи", weight: 740, price: 159, quanity: 1 }, // +
+//   { name: "Сыр", weight: 230, price: 99, quanity: 4 },
+//   { name: "Мука", weight: 230, price: 69, quanity: 5 },
+// ];
+// let totalWeight = 0;
+// for (let i = 0; i < foods.length; i++) {
+//   if (foods[i].price > 80 && foods[i].quanity < 7) {
+//     totalWeight += foods[i].weight;
+//   }
+// }
+
+// console.log(totalWeight);
