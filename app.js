@@ -254,3 +254,13 @@
 // }
 
 // console.log(totalWeight);
+// let obj = {
+//   valueOf() {
+//     return -1;
+//   },
+//   toString() {
+//     return this.valueOf();
+//   },
+// };
+// let res = String(obj < 0) + String(obj < 0);
+// console.log(res);
