@@ -254,3 +254,68 @@
 // }
 
 // console.log(totalWeight);
+// function anagram(s1, s2) {
+//   if (s1.length !== s2.length) return false;
+//   return s1.split("").sort().join("") === s2.split("").sort().join("");
+// }
+
+// console.log(anagram("", "")); // true
+// console.log(anagram("123", "123")); // true
+// console.log(anagram("bumdle", "dumble")); // true
+// console.log(anagram("aboba", "baoab")); // true
+// console.log(anagram("a", "")); // false
+// console.log(anagram("ab", "a")); // false
+// console.log(anagram("ab", "cd")); // false
+// console.log(anagram("codewars", "hackerrank")); //false
+
+// let str = "cat";
+
+// function rotateString(str) {
+//   const arr = str.split("");
+//   for (let i = 0; i < str.length; i++) {
+//     let last = arr.pop();
+//     arr.unshift(last);
+//     console.log(arr.join(""));
+//   }
+// }
+
+// rotateString(str);
+
+// function alphabetPosition(str) {
+//   const alph = 'abcdefghijklmnopqrstuvwxyz';
+//   return Array.from(str.toLowerCase()).filter((alph) => )
+// }
+
+// const string = "The sunset sets at twelve o' clock.";
+// console.log(alphabetPosition(string));
+
+// function alphabetPosition(str) {
+//   const alph = "abcdefghijklmnopqrstuvwxyz";
+//   let res = [];
+//   for (const text of str.toLowerCase()) {
+//     let index = alph.indexOf(text);
+//     if (index !== -1) {
+//       res.push(index + 1);
+//     }
+//   }
+//   return res.join(" ");
+// }
+
+// const string = "The sunset sets at twelve o' clock.";
+// console.log(alphabetPosition(string));
+
+function alphabetPosition(str) {
+  const alph = "abcdefghijklmnopqrstuvwxyz";
+  let res = [];
+  for (let i = 0; i < str.length; i++) {
+    let text = str[i].toLowerCase();
+    let index = alph.indexOf(text);
+    if (index !== -1) {
+      res.push(index + 1);
+    }
+  }
+  return res.join(" ");
+}
+
+const string = "The sunset sets at twelve o' clock.";
+console.log(alphabetPosition(string));
