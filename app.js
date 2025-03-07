@@ -304,18 +304,18 @@
 // const string = "The sunset sets at twelve o' clock.";
 // console.log(alphabetPosition(string));
 
-function alphabetPosition(str) {
-  const alph = "abcdefghijklmnopqrstuvwxyz";
-  let res = [];
-  for (let i = 0; i < str.length; i++) {
-    let text = str[i].toLowerCase();
-    let index = alph.indexOf(text);
-    if (index !== -1) {
-      res.push(index + 1);
-    }
-  }
-  return res.join(" ");
-}
+// function alphabetPosition(str) {
+//   const alph = "abcdefghijklmnopqrstuvwxyz";
+//   let res = [];
+//   for (let i = 0; i < str.length; i++) {
+//     let text = str[i].toLowerCase();
+//     let index = alph.indexOf(text);
+//     if (index !== -1) {
+//       res.push(index + 1);
+//     }
+//   }
+//   return res.join(" ");
+// }
 
-const string = "The sunset sets at twelve o' clock.";
-console.log(alphabetPosition(string));
+// const string = "The sunset sets at twelve o' clock.";
+// console.log(alphabetPosition(string));

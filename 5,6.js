@@ -1,4 +1,26 @@
 // деструктуризация
+// const user = {
+//   name: "jone",
+//   age: 16,
+//   skill: {
+//     speed: 50,
+//   },
+// };
+// const {
+//   skill: { speed },
+// } = user;
+
+// console.log(speed);
+
+// const arr = [1, [2, 3, 4]];
+// const Aray = arr[1];
+// console.log(Aray);
+
+// let str = "aboba";
+
+// const [a, sec] = str;
+// console.log(`${a}, ${sec}`);
+
 // пример с переменной
 // let [s10, ...s11] = [10, 20, 30, 40];
 // console.log(s11);
@@ -7,6 +29,40 @@
 // let [s10, s11] = a;
 // console.log(s11);
 
+// строке
+// let [s1, s2] = "intel inside".split(" ");
+// console.log(s1);
+// console.log(s2);
+
+// set
+// let [s3, , s4] = new Set("hello");
+// console.log(s3);
+// console.log(s4)
+
+// значение по умолчанию
+// let [s5, s6 = "zh"] = [999];
+// console.log(s5);
+// console.log(s6);
+
+// Объект
+// let obj = {
+//   name: "alex",
+//   passport: true,
+//   age: 87,
+// };
+
+// let { age, ppp, name } = obj;
+// console.log(age, ppp, name);
+
+// по переменным
+// let obj = {
+//   name: "alex",
+//   passport: true,
+//   age: 87,
+// };
+
+// let { age: x, name: y } = obj;
+// console.log(x, y);
 // ---------------------------------------------learnjs------------------------------------------------------------------
 // let arr = ["John", "Kantor"];
 // let [firstName, surname] = arr;
@@ -188,7 +244,8 @@
 // function findDifference(arr1, arr2) {
 //     return arr1.filter(item => !arr2.includes(item));
 //   }
-
+//
+//
 // --------------------------------------------roundmap------------------------------------------------------------------------------------------------------
 // const obj = {
 //   number: 0,
@@ -202,4 +259,5 @@
 //     }
 //   },
 // };
-// console.log(String(obj < 0) + String(obj < 0)); // "truefalse"
+// console.log(String(obj < 0) + String(obj < 0));
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------
